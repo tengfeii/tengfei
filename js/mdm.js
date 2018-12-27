@@ -28,5 +28,10 @@ $(function(){
         }
     }
     fix_footer_pos();
-    $(window).resize(fix_footer_pos)
+    $(window).resize(fix_footer_pos);
+
+    //使博客文章的图片16:9显示
+    var width=$(".img_item").width();
+    var height= width/16*9;
+    $(".img_item").innerHeight(height);
 });
